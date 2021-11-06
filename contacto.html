@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos Web</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+<!--navegador-->
+<header class="cd-auto-hide-header">
+
+
+	<nav class="cd-primary-nav">
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+
+		<ul id="cd-navigation">
+      <li><a href="index.html">inicio</a></li>
+      <li><a href="galeria.html">galeria</a></li>
+			<li><a href="videos.html">videos</a></li>
+      <li><a href="contacto.html">contacto</a></li>
+
+			
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
+
+
+<h4>Contacto</h4>
+<hr>
+
+
+ <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imagenes/angel 1.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/aten.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/angel 4.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/virgen.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/angelss.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/angeles.jpg" alt=""> </div> 
+          <div class="swiper-slide"><img src="imagenes/apolo4.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/atena.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/miguelangelo.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/angel 3.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/apolo3.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/monas.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/atenas.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/medusa.jpg" alt=""> </div>
+          <div class="swiper-slide"><img src="imagenes/apolo.jpg" alt=""> </div> 
+          
+
+
+        </div>
+        <!--add pagination-->
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+      
+</div>
+  
+<!--java script-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+
+      <!--fin slyder-->
+      
+      <div class="container_cont"></div>
+<form>
+  
+  <input type="text" value="Nombre" placeholder="Nombre">
+  <input type="text" value="correo" placeholder="correo">
+  <textarea >Mensajes</textarea>
+  <button>Enviar mensaje</button>
+</form>
+      
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+    
+</body>
+</html>
